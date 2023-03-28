@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babylonjs/core": "^5.52.0",
+    "@babylonjs/loaders": "^5.52.0",
     "cannon-es": "^0.20.0",
     "vue": "^3.2.47"
   },

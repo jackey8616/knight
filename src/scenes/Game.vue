@@ -18,13 +18,15 @@ import {
   Scene,
   Vector3,
 } from '@babylonjs/core';
+import '@babylonjs/loaders';
 
 import Ground from './ground';
+import Character from './character';
 
 const canvas = ref<HTMLCanvasElement>();
 let engine: Engine;
 let scene: Scene;
-let ground = new Ground(8, true);
+let ground = new Ground(3, 16, true);
 
 function createEngine(canvas: HTMLCanvasElement): Engine {
   return new Engine(canvas, true, {}, true);
@@ -74,6 +76,10 @@ async function init() {
 
   createSea(scene);
   ground.init(scene);
+
+  const character = await new Character(
+    'character', scene, new Vector3(0, 10, 0),
+  ).init();
 
   engine.runRenderLoop(() => {
     scene.render();

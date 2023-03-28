@@ -12,6 +12,11 @@
   resolved "https://registry.npmjs.org/@babylonjs/core/-/core-5.52.0.tgz#8a5597927f81f1440cace8b03b8f3a0131893166"
   integrity sha512-BSC4f2vB96elvhJqdiIBJ/Mdn7pHRVg/KjYopY8vs6WgMpn34IDvvrpG1IIbOOzALpnvBMl8xao3ugFSmVmkpg==
 
+"@babylonjs/loaders@^5.52.0":
+  version "5.52.0"
+  resolved "https://registry.npmjs.org/@babylonjs/loaders/-/loaders-5.52.0.tgz#06384b6890414b1d00b4540bbb56b6b38b4fe460"
+  integrity sha512-kak6eymMWhxzDe0Fik1+EoRBuunZxJZFqDMZJrmuWbOPZaB5VpZqHacjMwbQUL3U7x4/cLqcVIU/CBmjlJaugQ==
+
 "@esbuild/android-arm64@0.17.14":
   version "0.17.14"
   resolved "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.17.14.tgz#4624cea3c8941c91f9e9c1228f550d23f1cef037"
