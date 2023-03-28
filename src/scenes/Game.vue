@@ -27,7 +27,7 @@ let scene: Scene;
 let ground = new Ground(8, true);
 
 function createEngine(canvas: HTMLCanvasElement): Engine {
-  return new Engine(canvas, true);
+  return new Engine(canvas, true, {}, true);
 }
 function createScene(engine: Engine) {
   const scene = new Scene(engine);
