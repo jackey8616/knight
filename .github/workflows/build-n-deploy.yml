@@ -1,0 +1,25 @@
+name: Build n Deploy to GitPage
+on:
+  push:
+    branches:
+      - main
+      - develop
+jobs:
+  BUILD-DEPLOY:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 14
+    - name: Build
+      run: |
+        yarn
+        yarn build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
+        CLEAN: true
