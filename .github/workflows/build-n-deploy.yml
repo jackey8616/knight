@@ -1,11 +1,15 @@
 name: Build n Deploy to GitPage
+
 on:
   push:
     branches:
       - main
       - develop
+permissions:
+  contents: write
+
 jobs:
-  BUILD-DEPLOY:
+  Build-n-Deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
